@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="JRRC is an Ayurvedic logistics company in Bihar helping small pharmacies, clinics, and healthcare businesses order trusted products easily."
+    />
+    <title>JRRC | Ayurvedic Logistics in Bihar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <a class="brand" href="#">JRRC</a>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#order">Order</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">JRRC Ayurvedic</p>
+          <h1>Easy access to trusted ayurvedic products for every small shop and clinic.</h1>
+          <p>
+            JRRC supports small medicine shops, small hospitals, wellness centers, and healthcare providers with fast delivery, dependable supply, and a simple ordering experience.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#order">Order Now</a>
+            <a class="btn btn-secondary" href="#products">View Products</a>
+          </div>
+          <div class="hero-badges">
+            <span>Fast delivery across Bihar</span>
+            <span>Quality-checked products</span>
+            <span>Simple reorders</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Why businesses trust JRRC</h2>
+          <ul>
+            <li>Reliable supply for daily needs</li>
+            <li>Get best quality products at competitive prices</li>
+            <li>Easy ordering for repeat buyers</li>
+            <li>Support for small healthcare setups</li>
+            <li>Friendly assistance from our team</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">About JRRC</p>
+          <h2>Built for local healthcare businesses that need dependable supply.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="info-card">
+            <h3>Made for local needs</h3>
+            <p>
+              We understand the challenges small businesses face when sourcing ayurvedic medicines and wellness products. Our goal is to make every order simple, quick, and transparent.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Easy to work with</h3>
+            <p>
+              From first-time buyers to regular customers, we offer clear product choices, simple pricing, and helpful support for every order.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Serving Bihar</h3>
+            <p>
+              Whether you are in Patna, Muzaffarpur, Saran , Siwan , or nearby towns, JRRC is ready to support your business with dependable service.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="section alt-section">
+        <div class="section-heading">
+          <p class="eyebrow">Popular products</p>
+          <h2>Browse trusted ayurvedic essentials for your store or clinic.</h2>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <h3>Herbal Capsules</h3>
+            <p>Daily wellness support in a compact, easy-to-stock pack.</p>
+            <img src="IMG-20260704-WA0022.jpg" alt="Herbal Capsules" />
+            <div class="product-meta">
+              <span>Pack: 30 capsules</span>
+              <strong>₹180</strong>
+            </div>
+            <button class="add-to-order" data-product="Herbal Capsules">Add to order</button>
+          </article>
+
+          <article class="product-card">
+            <h3>Ayurvedic Syrup</h3>
+            <p>Popular herbal syrup for common wellness needs and repeat demand.</p>
+            <div class="product-meta">
+              <span>Pack: 200 ml</span>
+              <strong>₹220</strong>
+            </div>
+            <button class="add-to-order" data-product="Ayurvedic Syrup">Add to order</button>
+          </article>
+
+          <article class="product-card">
+            <h3>Digestive Powder</h3>
+            <p>Trusted formulation for daily digestive care and customer convenience.</p>
+            <div class="product-meta">
+              <span>Pack: 200 gm</span>
+              <strong>₹150</strong>
+            </div>
+            <button class="add-to-order" data-product="Digestive Powder">Add to order</button>
+          </article>
+
+          <article class="product-card">
+            <h3>Immunity Boost Kit</h3>
+            <p>A simple combo pack for clinics and wellness centers seeking reliable stock.</p>
+            <div class="product-meta">
+              <span>Pack: 4 units</span>
+              <strong>₹420</strong>
+            </div>
+            <button class="add-to-order" data-product="Immunity Boost Kit">Add to order</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="order" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Order request</p>
+          <h2>Place your requirement in a few easy steps.</h2>
+        </div>
+
+        <div class="order-layout">
+          <div class="order-info">
+            <h3>How it works</h3>
+            <ul>
+              <li>Select the product you need</li>
+              <li>Share your shop or clinic details</li>
+              <li>Tell us your city and quantity</li>
+              <li>Our team will contact you quickly</li>
+            </ul>
+          </div>
+
+          <form id="order-form" class="order-form">
+            <label>
+              Name of shop or hospital
+              <input id="business-name" name="businessName" type="text" placeholder="Example: Sharma Medical Store" required />
+            </label>
+
+            <label>
+              Contact number
+              <input id="contact" name="contact" type="tel" placeholder="98765 43210" required />
+            </label>
+
+            <label>
+              Select product
+              <select id="product-select" name="product" required>
+                <option value="">Choose a product</option>
+                <option>Herbal Capsules</option>
+                <option>Ayurvedic Syrup</option>
+                <option>Digestive Powder</option>
+                <option>Immunity Boost Kit</option>
+              </select>
+            </label>
+
+            <label>
+              Quantity
+              <input id="quantity" name="quantity" type="number" min="1" value="1" required />
+            </label>
+
+            <label>
+              City / Area
+              <input id="city" name="city" type="text" placeholder="Patna" required />
+            </label>
+
+            <label>
+              Additional note
+              <textarea id="notes" name="notes" rows="3" placeholder="Any special requirement or preferred timing"></textarea>
+            </label>
+
+            <button type="submit" class="btn btn-primary full-width">Submit order request</button>
+            <p id="form-message" class="form-message" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 JRRC. Ayurvedic logistics for Bihar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
