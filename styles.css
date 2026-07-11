@@ -70,7 +70,7 @@ a {
   letter-spacing: 0.2em;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #d9f1d0;
+  color: blue;
   margin-bottom: 8px;
 }
 
@@ -178,6 +178,21 @@ a {
   border-radius: 18px;
   padding: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.product-card {
+    width:300px;
+}
+
+.product-image {
+    height:300px;
+    object-fit:contain;
+}  
+
+.jrrc-logo {
+        height:60px;
+        border:none;
+        border-radius:30px;
 }
 
 .product-grid {
